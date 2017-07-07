@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using VidRen.Models;
+using VidRen.ViewModels;
 
 namespace VidRen.Controllers
 {
@@ -13,7 +14,19 @@ namespace VidRen.Controllers
         public ActionResult Random()
         {
             var movie = new Movie() { Name = "Shrek!" };
-            return View(movie);
+            var customers = new List<Customer>
+            {
+                new Customer { Name = "Customer1"},
+                new Customer { Name = "Customer2"}
+            };
+
+            var viewModel = new RandomMovieViewModel
+            {
+                Movie = movie,
+                Customers = customers
+            };
+
+            return View(viewModel);
         }
 
         public ActionResult Edit(int id)
