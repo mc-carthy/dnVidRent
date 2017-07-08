@@ -19,14 +19,16 @@ namespace VidRen.Models
         [Required]
         [Display(Name = "Genre")]
         public byte GenreId { get; set; }
-
+        
         public DateTime DateAdded { get; set; }
 
         [Display(Name = "Release Date")]
-        public DateTime ReleaseDate { get; set; }
+        [Required]
+        public DateTime? ReleaseDate { get; set; }
 
         [Display(Name = "Number In Stock")]
         [Range(1, 100)]
-        public byte NumberInStock { get; set; }
+        [Required]
+        public byte? NumberInStock { get; set; }
     }
 }
