@@ -23,6 +23,7 @@ namespace VidRen.Models
         public byte MembershipTypeId { get; set; }
 
         [Display(Name = "Date of Birth")]
+        [Min18IfAMember]
         public DateTime? Birthdate { get; set; }
     }
 }
