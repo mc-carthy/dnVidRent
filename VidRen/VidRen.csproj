@@ -348,13 +348,6 @@
     <EmbeddedResource Include="Migrations\201707081059197_ApplyDataAnnotationsToCustomerName.resx">
       <DependentUpon>201707081059197_ApplyDataAnnotationsToCustomerName.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
-    <EmbeddedResource Include="Migrations\201707081119036_AddNameToMembershipType.resx">
-      <DependentUpon>201707081119036_AddNameToMembershipType.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201707081121479_SetNameOfMembershipTypes.resx">
-      <DependentUpon>201707081121479_SetNameOfMembershipTypes.cs</DependentUpon>
-=======
     <EmbeddedResource Include="Migrations\201707081146490_AddNameToMembershipType.resx">
       <DependentUpon>201707081146490_AddNameToMembershipType.cs</DependentUpon>
     </EmbeddedResource>
@@ -369,7 +362,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201707081209571_SeedGenres.resx">
       <DependentUpon>201707081209571_SeedGenres.cs</DependentUpon>
->>>>>>> temp
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
