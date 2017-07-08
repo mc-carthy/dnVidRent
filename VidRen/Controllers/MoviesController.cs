@@ -50,6 +50,7 @@ namespace VidRen.Controllers
 
             var viewModel = new MovieFormViewModel
             {
+                Movie = new Movie(),
                 Genres = genres
             };
 
@@ -77,8 +78,6 @@ namespace VidRen.Controllers
         [HttpPost]
         public ActionResult Save(Movie movie)
         {
-
-
             if (!ModelState.IsValid)
             {
                 var viewModel = new MovieFormViewModel
