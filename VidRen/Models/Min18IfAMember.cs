@@ -12,8 +12,10 @@ namespace VidRen.Models
         {
             var customer = (Customer)validationContext.ObjectInstance;
 
-            // TODO - Remove hard-coded membership Id representing Pay As You Go
-            if (customer.MembershipTypeId == 0 || customer.MembershipTypeId == 1)
+            if (
+                customer.MembershipTypeId == MembershipType.Unknown || 
+                customer.MembershipTypeId == MembershipType.PayAsYouGo
+            )
             {
                 return ValidationResult.Success;
             }
