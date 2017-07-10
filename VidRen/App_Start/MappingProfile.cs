@@ -12,9 +12,15 @@ namespace VidRen.App_Start
     {
         public MappingProfile()
         {
+            // Domain => DTO
             Mapper.CreateMap<Customer, CustomerDto>();
+            Mapper.CreateMap<Movie, MovieDto>();
 
-            Mapper.CreateMap<CustomerDto, Customer>();
+            // DTO => Domain
+            Mapper.CreateMap<CustomerDto, Customer>()
+                .ForMember(c => c.Id, opt => opt.Ignore());
+            Mapper.CreateMap<MovieDto, Movie>()
+                .ForMember(m => m.Id, opt => opt.Ignore());
         }
     }
 }
