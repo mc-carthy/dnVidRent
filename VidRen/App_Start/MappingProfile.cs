@@ -14,7 +14,7 @@ namespace VidRen.App_Start
         {
             Mapper.CreateMap<Customer, CustomerDto>();
 
-            Mapper.CreateMap<Customer, CustomerDto>();
+            Mapper.CreateMap<CustomerDto, Customer>();
         }
     }
 }
