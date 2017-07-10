@@ -15,6 +15,7 @@ namespace VidRen.App_Start
             // Domain => DTO
             Mapper.CreateMap<Customer, CustomerDto>();
             Mapper.CreateMap<Movie, MovieDto>();
+            Mapper.CreateMap<MembershipType, MembershipTypeDto>();
 
             // DTO => Domain
             Mapper.CreateMap<CustomerDto, Customer>()

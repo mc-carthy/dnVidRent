@@ -20,6 +20,8 @@ namespace VidRen.Dtos
         // This is implicitly required as a byte is a not a nullable type
         public byte MembershipTypeId { get; set; }
 
+        public MembershipTypeDto MembershipType { get; set; }
+
         //[Min18IfAMember]
         public DateTime? Birthdate { get; set; }
     }
